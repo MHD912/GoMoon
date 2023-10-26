@@ -6,13 +6,14 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        decoration: const BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage("assets/images/astro_moon.png"),
-          ),
+        body: Container(
+      color: Colors.red,
+      decoration: const BoxDecoration(
+        image: DecorationImage(
+          fit: BoxFit.fill,
+          image: AssetImage("assets/images/astro_moon.png"),
         ),
       ),
-    );
+    ));
   }
 }
