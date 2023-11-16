@@ -2,20 +2,18 @@ import 'package:flutter/material.dart';
 import './pages/home_page.dart';
 
 void main() {
-  runApp(const App());
+  runApp(const MainApp());
 }
 
-class App extends StatelessWidget {
-  const App({Key? key}) : super(key: key);
+class MainApp extends StatelessWidget {
+  const MainApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'GoMoon',
-      theme: ThemeData(
-        scaffoldBackgroundColor: const Color.fromRGBO(31, 31, 31, 1),
-      ),
-      home: const HomePage(),
+      theme: ThemeData(colorScheme: const ColorScheme.dark()),
+      home: HomePage(),
     );
   }
 }
